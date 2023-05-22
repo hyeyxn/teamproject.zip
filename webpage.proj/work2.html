@@ -1,0 +1,109 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" type="text/css" href="work.css">
+</head>
+
+<body>
+  <h3>레이</h3>
+  
+  <!-- 자동차 사진이 나오는 div 구역 -->
+  <div id="carimage" class="pic"
+    style="width: 1300; height: 700; border: 1px solid  black; float: left; margin-left:50px; margin-top:100px; margin-right:80px;">
+    <!-- 자동차 옆면 사진 -->
+    <img src="img/레이 측면.jpg" width="1300" height="700" class="car">
+    <!-- 자동차 전면 사진 -->
+    <img src="img/레이 전면.jpg" width="1300" height="700" class="front">
+  </div>
+
+  <!-- 옵션 --> <!-- border은 div구역을 알기위해서 표시한겁니다 마지막에 지움 -->
+  <div style="width: 400; height: 700; border: 1px solid black; margin-top:100px; float:left;">
+    <form>
+
+      <br>
+      <br>
+
+      <fieldset><!-- 색상은 차 색에 맞도록 수정 하면 될꺼같아요 -->
+        <legend>색상</legend>
+
+        <label>
+          <button style="background-color: gray; width:250; height:50; margin-left: 30; margin-top: 20;"></button>
+          <input type="radio" name="color" value="color1">
+        </label>
+
+        <label>
+          <button style="background-color: black; width:250; height:50; margin-left: 30; margin-top: 20;"></button>
+          <input type="radio" name="color" value="color2">
+        </label>
+
+        <label>
+          <button style="background-color: white; width:250; height:50; margin-left: 30; margin-top: 20;"></button>
+          <input type="radio" name="color" value="color3">
+        </label>
+
+        <label>
+          <button
+            style="background-color: gainsboro; width:250; height:50; margin-left: 30; margin-top: 20; margin-bottom: 20;"></button>
+          <input type="radio" name="color" value="color4">
+        </label>
+      </fieldset>
+
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>옵션</legend>
+
+        <ul>
+          <label>
+            <li>
+              <p style="cursor: pointer;">드라이브 와이즈<input type="checkbox" name="color" value="color4"></p>
+            </li>
+          </label>
+
+          <label>
+            <li>
+              <p style="cursor: pointer;">HUD<input type="checkbox" name="color" value="color4"></p>
+            </li>
+          </label>
+
+          <label>
+            <li>
+              <p style="cursor: pointer;">하이테크<input type="checkbox" name="color" value="color4"></p>
+            </li>
+          </label>
+        </ul>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <div><!-- 자동차 설명 -->
+    <table>
+      <tr> <!--내용 추가 하시면서 패딩과 br 적절히 넣어주셔야 합니다!-->
+        <td><p>1.0 가솔린 엔진
+          최고 출력 76 PS / 6,200 rpm
+          최대 토크 9.7 kgf•m / 3,750 rpm
+          복합 연비 13.0 km/ℓ</p></td>
+        <td><p>모던하고 견고한 디자인</p></td>
+        <td><p>다채롭게 사용 가능한 경형 최대 공간</p></td>
+        <td><p>풀 폴딩 시트(전좌석)</p></td>
+      </tr>
+      <tr>
+        <td><p>슈퍼비전 클러스터 (4.2인치 칼라 TFT LCD)</p></td>
+        <td><p>8인치 내비게이션</p></td>
+        <td><p>대용량 루프 콘솔</p></td>
+        <td><p>스마트폰으로 차량 출입 및 시동</p></td>
+      </tr>
+      <tr>
+        <td><p>운전자 및 다른 차량의 운전자들에게까지 주행환경을 스스로 분석</p></td>
+        <td><p>차량의 전/후방에 고화질 카메라가 내장된 영상 기록장치</p></td>
+        <td><p>풀 오토 에어컨</p></td>
+        <td><p>공조기 외 스티어링 휠 열선, 시트 열선/통풍을 자동으로 감지</p></td>
+      </tr>
+    </table>
+  </div>
+
+  <a href="계약서.html" target="_blank"><input type="button" class="button" value="계약하기"></a>
+</body>
+</html>

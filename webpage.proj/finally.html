@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>계약이 완료되었습니다.</title>
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+		div {
+			text-align: center;
+			margin-right: 10em;
+			margin-left: 10em;
+			margin-top: 5em;
+		}
+	</style>
+</head>
+
+<body> <!--이부분은 css / 자료조사 팀에게 맡기겠습니다.. 이쁘게 만들어주세요..-->
+	<canvas id="myCanvas1"></canvas>
+	<script>
+		const canvas1 = document.getElementById('myCanvas1');
+		const ctx1 = canvas1.getContext('2d');
+		const img = new Image();
+		img.src = '타이어.png';
+		let angle = 0;
+		const draw = () => {
+			angle += 0.07;
+			ctx1.clearRect(0, 0, canvas1.width, canvas1.height);
+			ctx1.save();
+			ctx1.translate(canvas1.width / 2, canvas1.height / 2);
+			ctx1.rotate(angle);
+			ctx1.drawImage(img, -img.width / 2, -img.height / 2);
+			ctx1.restore();
+			requestAnimationFrame(draw);
+		}
+		img.onload = () => {
+			canvas1.width = img.width;
+			canvas1.height = img.height;
+			draw();
+		};
+	</script>
+	<div>
+		<h2>계약이 체결되었습니다.</h2>
+		<h2>언제나 함께하겠습니다.</h2>
+		<h2>감사합니다.</h2>
+	</div>
+</body>
+</html>

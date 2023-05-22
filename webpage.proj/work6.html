@@ -1,0 +1,112 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" type="text/css" href="work.css">
+</head>
+
+<body>
+  <h3>그랜저</h3>
+  
+  <!-- 자동차 사진이 나오는 div 구역 -->
+  <div id="carimage" class="pic"
+    style="width: 1300; height: 700; border: 1px solid  black; float: left; margin-left:50px; margin-top:100px; margin-right:80px;">
+    <!-- 자동차 옆면 사진 -->
+    <img src="img/그랜저(측면).png" width="1300" height="700" class="car">
+    <!-- 자동차 전면 사진 -->
+    <img src="img/그랜저(전면).png" width="1300" height="700" class="front">
+  </div>
+
+  <!-- 옵션 --> <!-- border은 div구역을 알기위해서 표시한겁니다 마지막에 지움 -->
+  <div style="width: 400; height: 700; border: 1px solid black; margin-top:100px; float:left;">
+    <form>
+
+      <br>
+      <br>
+
+      <fieldset><!-- 색상은 차 색에 맞도록 수정 하면 될꺼같아요 -->
+        <legend>색상</legend>
+
+        <label>
+          <button style="background-color: gray; width:250; height:50; margin-left: 30; margin-top: 20;"></button>
+          <input type="radio" name="color" value="color1">
+        </label>
+
+        <label>
+          <button style="background-color: black; width:250; height:50; margin-left: 30; margin-top: 20;"></button>
+          <input type="radio" name="color" value="color2">
+        </label>
+
+        <label>
+          <button style="background-color: white; width:250; height:50; margin-left: 30; margin-top: 20;"></button>
+          <input type="radio" name="color" value="color3">
+        </label>
+
+        <label>
+          <button
+            style="background-color: gainsboro; width:250; height:50; margin-left: 30; margin-top: 20; margin-bottom: 20;"></button>
+          <input type="radio" name="color" value="color4">
+        </label>
+      </fieldset>
+
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>옵션</legend>
+
+        <ul>
+          <label>
+            <li>
+              <p style="cursor: pointer;">드라이브 와이즈<input type="checkbox" name="color" value="color4"></p>
+            </li>
+          </label>
+
+          <label>
+            <li>
+              <p style="cursor: pointer;">HUD<input type="checkbox" name="color" value="color4"></p>
+            </li>
+          </label>
+
+          <label>
+            <li>
+              <p style="cursor: pointer;">하이테크<input type="checkbox" name="color" value="color4"></p>
+            </li>
+          </label>
+        </ul>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <div><!-- 자동차 설명 -->
+    <table>
+      <tr> <!--내용 추가 하시면서 패딩과 br 적절히 넣어주셔야 합니다!-->
+        <td><p>스마트스트림 가솔린 2.5
+          최고 출력 198 PS / 6,100 rpm
+          최대 토크 25.3 kgf·m / 4,000 rpm
+          복합연비 11.7 km/ℓ</p></td>
+        <td><p>스마트스트림 가솔린 3.5
+          최고 출력 300 PS / 6,400 rpm
+          최대 토크 36.6 kgf·m / 5,000 rpm
+          복합연비 9.5 km/ℓ</p></td>
+        <td><p>프리뷰 전자제어 서스펜션</p></td>
+        <td><p>액티브 로드 노이즈 컨트롤</p></td>
+      </tr>
+      <tr>
+        <td><p>전방 예측 변속 시스템</p></td>
+        <td><p>중립 주행 제어</p></td>
+        <td><p>BOSE 프리미엄 사운드(14 스피커, 외장 앰프)</p></td>
+        <td><p>뒷좌석 전동식 도어커튼</p></td>
+      </tr>
+      <tr>
+        <td><p>진동경고 스티어링 휠</p></td>
+        <td><p>운전석 자세 메모리 시스템</p></td>
+        <td><p>운전석 에르고 모션 시트</p></td>
+        <td><p>모노포스트 헤드레스트</p></td>
+      </tr>
+    </table>
+  </div>
+  
+  <a href="계약서.html" target="_blank"><input type="button" class="button" value="계약하기"></a>
+</body>
+</html>
